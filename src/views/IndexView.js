@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
+import FrameworkFormView from './FrameworkFormView'
 
 const scripts = [
   fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fb2ce675a0bc01f7fb15678").then(body => body.text()),
@@ -47,7 +48,7 @@ class IndexView extends React.Component {
 
   render() {
     const proxies = Controller !== IndexView ? transformProxies(this.props.children) : {
-
+      'framework_form': [],
     }
 
     return (
@@ -63,44 +64,32 @@ class IndexView extends React.Component {
               <div className="af-class-flex-container w-container">
                 <div>
                   <h1 className="af-class-heading">Collective<br />Entertainment</h1>
-                  <p className="af-class-paragraph">Our best work happens when we're all rowing together, towards the most significant outcomes.<br /><br />We help you get a handle on Free-Top-Play (F2P) mobile game development, improve your metrics, and scale your product.<br /><br />15+ years developing games, building infrastructure, managing products, and guiding teams.<br /></p>
+                  <p className="af-class-paragraph">Our best work happens when we're all rowing together toward the most significant outcomes.<br /><br />We help you get a handle on Free-Top-Play (F2P) product development each step of the way.<br /><br />Formalize your process, improve your metrics, and scale your producs.<br /><br />15+ years developing games, building infrastructure, managing products, and guiding teams.<br /></p>
                 </div>
-                <div className="af-class-hero-image-mask"><img src="images/CELogo_Large_black.png" srcSet="images/CELogo_Large_black.png 500w, images/CELogo_Large_black.png 800w, images/CELogo_Large_black.png 1080w, images/CELogo_Large_black.png 1600w, images/CELogo_Large_black.png 2000w, images/CELogo_Large_black.png 2600w, images/CELogo_Large_black.png 3200w, images/CELogo_Large_black.png 5000w" sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, 437.55859375px" alt className="af-class-hero-image" /></div>
+                <div className="af-class-hero-image-mask"><img src="images/CELogo_Large_black.png" sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, 498.30078125px" srcSet="images/CELogo_Large_black-p-500.png 500w, images/CELogo_Large_black-p-800.png 800w, images/CELogo_Large_black-p-1080.png 1080w, images/CELogo_Large_black-p-1600.png 1600w, images/CELogo_Large_black-p-2000.png 2000w, images/CELogo_Large_black-p-2600.png 2600w, images/CELogo_Large_black-p-3200.png 3200w, images/CELogo_Large_black.png 5000w" alt className="af-class-hero-image" /></div>
               </div>
             </header>
             <div className="w-row">
               <div className="af-class-column w-col w-col-6">
                 <div className="af-class-centered-container w-container">
+                  <h2 className="af-class-heading-3">The Framework</h2>
+                  <p className="af-class-paragraph-3">A F2P mobile game development framework that formalizes the step-by-step progress of market research, to scaling.<br />Coming Soon.</p>
+                  {map(proxies['framework_form'], props => <af-framework_form {...props}>{props.children}</af-framework_form>)}
+                </div>
+              </div>
+              <div className="af-class-column-2 w-col w-col-6">
+                <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-2">Consulting</h2>
-                  <p className="af-class-paragraph-2">Let's cover your progress, goals, and timelines in 30 minutes.<br />‍<br />I'll propose workshops and actionables&nbsp;at the end.</p>
+                  <p className="af-class-paragraph-2">Tell me about your progress, goals, and timelines.<br />I'll help you soundboard, discuss strategies, and explore tactics.</p>
                   <div className="af-class-div-block-4">
                     <a href="https://calendly.com/roberto_alcantara/45-minute?month=2020-11&date=2020-11-17&back=1" target="_blank" className="af-class-button w-button">Join&nbsp;Waitlist</a>
                   </div>
                 </div>
               </div>
-              <div className="af-class-column-2 w-col w-col-6">
-                <div className="af-class-centered-container w-container">
-                  <h2 className="af-class-heading-3">The Framework</h2>
-                  <p className="af-class-paragraph-3">A F2P mobile game development framework designed to guide you step-by-step.<br /><br />Coming Soon.</p>
-                  <div className="af-class-form-block w-form">
-                    <form id="email-form" name="email-form" data-name="Email Form" className="af-class-subscribe-form-flex">
-                      <div className="af-class-subscribe-form-input-wrapper"><input type="email" className="af-class-subscribe-form-input w-input" maxLength={256} name="Subscriber-Email" data-name="Subscriber Email" placeholder="E-Mail Address" id="Subscriber-Email" required /></div>
-                      <div className="af-class-div-block-5"><input type="submit" defaultValue="Subscribe" data-wait="Please wait..." className="af-class-submit-button-2 w-button" /></div>
-                    </form>
-                    <div className="af-class-success-message w-form-done">
-                      <div className="af-class-text-block">Thank you for subscribing.</div>
-                    </div>
-                    <div className="af-class-error-message af-class-error-message-2 w-form-fail">
-                      <div className="af-class-text-block-2">Subscription&nbsp;Error.&nbsp;Please try again.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="af-class-div-block-3">
-              <a href="#" className="af-class-link-block w-inline-block"><img src="images/linkedin-icon-png-transparent-background-13.png" loading="lazy" alt className="af-class-image-2" /></a>
-              <a href="#" className="w-inline-block"><img src="images/download-8.png" loading="lazy" alt className="af-class-image-3" /></a>
-              <a href="#" className="w-inline-block"><img src="images/mail_icon.png" loading="lazy" srcSet="images/mail_icon.png 500w, images/mail_icon.png 800w, images/mail_icon.png 980w" sizes="100px" alt className="af-class-image-4" /></a>
+              <a href="https://www.linkedin.com/in/ship-it/" target="_blank" className="af-class-link-block w-inline-block"><img src="images/linkedin-icon-png-transparent-background-13.png" loading="lazy" alt className="af-class-image-2" /></a>
+              <a href="#mailto:roberto@cegames.ca" className="w-inline-block"><img src="images/mail_icon.png" loading="lazy" sizes="100px" srcSet="images/mail_icon-p-500.png 500w, images/mail_icon-p-800.png 800w, images/mail_icon.png 980w" alt className="af-class-image-4" /></a>
             </div>
             {/* [if lte IE 9]><![endif] */}
           </div>

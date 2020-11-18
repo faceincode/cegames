@@ -142,7 +142,7 @@
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
-  background-color: #83fe8f;
+  background-color: #ffe244;
 }
 
 .af-view .af-class-submit-button {
@@ -185,7 +185,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ffe244;
+  background-color: #83fe8f;
 }
 
 .af-view .af-class-paragraph-3 {
@@ -401,6 +401,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    background-color: #ffe244;
   }
 
   .af-view .af-class-heading-2 {
@@ -430,6 +431,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    background-color: #83fe8f;
   }
 
   .af-view .af-class-paragraph-3 {

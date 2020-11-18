@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
-import FrameworkFormView from './FrameworkFormView'
 
 const scripts = [
   fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fb2ce675a0bc01f7fb15678").then(body => body.text()),
@@ -48,7 +47,7 @@ class IndexView extends React.Component {
 
   render() {
     const proxies = Controller !== IndexView ? transformProxies(this.props.children) : {
-      'framework-form': [],
+
     }
 
     return (
@@ -75,7 +74,10 @@ class IndexView extends React.Component {
                   <h2 className="af-class-heading-3">The Framework</h2>
                   <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes best practices, from initial market research, to scaling your publishing.<br />Coming Soon.</p>
                   <div className="af-class-form-block w-form">
-                    <FrameworkFormView.Controller-af-sock-framework-form />
+                    <form id="email-form" name="email-form" data-name="Email Form" className="af-class-subscribe-form-flex">
+                      <div className="af-class-subscribe-form-input-wrapper"><input type="email" className="af-class-subscribe-form-input w-input" maxLength={256} name="Subscriber-Email" data-name="Subscriber Email" placeholder="E-Mail Address" id="Subscriber-Email" required /></div>
+                      <div className="af-class-div-block-5"><input type="submit" defaultValue="Subscribe" data-wait="Please wait..." className="af-class-submit-button-2 w-button" /></div>
+                    </form>
                     <div className="af-class-success-message w-form-done">
                       <div className="af-class-text-block">Thank you for subscribing.</div>
                     </div>

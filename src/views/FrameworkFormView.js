@@ -46,8 +46,8 @@ class FrameworkFormView extends React.Component {
 
   render() {
     const proxies = Controller !== FrameworkFormView ? transformProxies(this.props.children) : {
-      'framework_email': [],
-      'framework_submit': [],
+      'framework-email': [],
+      'framework-submit': [],
     }
 
     return (
@@ -58,18 +58,10 @@ class FrameworkFormView extends React.Component {
           @import url(/css/celanding.webflow.css);
         ` }} />
         <span className="af-view">
-          <div className="af-class-form-block w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" className="af-class-subscribe-form-flex">
-              <div className="af-class-subscribe-form-input-wrapper">{map(proxies['framework_email'], props => <input type="email" maxLength={256} name="Subscriber-Email" data-name="Subscriber Email" placeholder="E-Mail Address" id="Subscriber-Email" required {...{...props, className: `af-class-subscribe-form-input w-input ${props.className || ''}`}}>{props.children}</input>)}</div>
-              <div className="af-class-div-block-5">{map(proxies['framework_submit'], props => <input type="submit" value="Subscribe" data-wait="Please wait..." {...{...props, className: `af-class-submit-button-2 w-button ${props.className || ''}`}}>{props.children}</input>)}</div>
-            </form>
-            <div className="af-class-success-message w-form-done">
-              <div className="af-class-text-block">Thank you for subscribing.</div>
-            </div>
-            <div className="af-class-error-message af-class-error-message-2 w-form-fail">
-              <div className="af-class-text-block-2">Subscription&nbsp;Error.&nbsp;Please try again.</div>
-            </div>
-          </div>
+          <form id="email-form" name="email-form" data-name="Email Form" className="af-class-subscribe-form-flex">
+            <div className="af-class-subscribe-form-input-wrapper">{map(proxies['framework-email'], props => <input type="email" maxLength={256} name="Subscriber-Email" data-name="Subscriber Email" placeholder="E-Mail Address" id="Subscriber-Email" required {...{...props, className: `af-class-subscribe-form-input w-input ${props.className || ''}`}}>{props.children}</input>)}</div>
+            <div className="af-class-div-block-5">{map(proxies['framework-submit'], props => <input type="submit" value="Subscribe" data-wait="Please wait..." {...{...props, className: `af-class-submit-button-2 w-button ${props.className || ''}`}}>{props.children}</input>)}</div>
+          </form>
         </span>
       </span>
     )

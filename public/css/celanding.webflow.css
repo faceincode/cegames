@@ -119,6 +119,8 @@
 
 .af-view .af-class-heading {
   font-family: Montserrat, sans-serif;
+  font-size: 44px;
+  line-height: 44px;
 }
 
 .af-view .af-class-column {
@@ -320,6 +322,10 @@
 .af-view .af-class-form-block {
   height: auto;
   margin-bottom: 0px;
+}
+
+.af-view .af-class-div-block-6 {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {

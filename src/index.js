@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './styles'
+import './scripts'
+import IndexView from './views/IndexView'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <IndexView />
   </React.StrictMode>,
   document.getElementById('root')
 );

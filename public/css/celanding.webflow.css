@@ -226,7 +226,7 @@
 }
 
 .af-view .af-class-error-message-2 {
-  position: relative;
+  position: static;
   left: 0%;
   top: -50px;
   right: 0%;
@@ -234,7 +234,7 @@
 }
 
 .af-view .af-class-text-block-2 {
-  position: relative;
+  position: static;
   left: 312px;
   top: 0px;
   right: 0px;

@@ -103,8 +103,8 @@
 }
 
 .af-view .af-class-subscribe-form-input {
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 300px;
+  min-width: 300px;
   margin-bottom: 0px;
   font-family: Inconsolata, monospace;
 }
@@ -166,9 +166,12 @@
 }
 
 .af-view .af-class-button {
+  max-width: 150px;
+  min-width: 150px;
   background-color: #000;
   font-family: Inconsolata, monospace;
   color: #fff;
+  font-size: 18px;
 }
 
 .af-view .af-class-column-2 {
@@ -195,11 +198,16 @@
 }
 
 .af-view .af-class-submit-button-2 {
-  max-width: 100px;
-  min-width: 100px;
+  max-width: 150px;
+  min-width: 150px;
   margin-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   background-color: #000;
+  font-family: Inconsolata, monospace;
   color: #fff;
+  font-size: 18px;
+  text-align: center;
 }
 
 .af-view .af-class-heading-3 {
@@ -284,6 +292,7 @@
 }
 
 .af-view .af-class-link-block {
+  width: auto;
   text-align: left;
 }
 
@@ -293,6 +302,7 @@
 }
 
 .af-view .af-class-image-2 {
+  width: 75px;
   max-width: 100px;
   margin-right: 5px;
   padding-right: 0px;
@@ -305,6 +315,7 @@
 }
 
 .af-view .af-class-image-4 {
+  width: 75px;
   max-width: 100px;
   margin-left: 5px;
 }

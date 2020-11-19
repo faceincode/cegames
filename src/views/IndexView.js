@@ -101,7 +101,7 @@ class IndexView extends React.Component {
             </div>
             <div className="af-class-div-block-3">
               <a href="https://www.linkedin.com/in/ship-it/" target="_blank" className="af-class-link-block w-inline-block"><img src="images/linkedin-icon-png-transparent-background-13.png" loading="lazy" alt className="af-class-image-2" /></a>
-              <a href="mailto:roberto@cegames.ca?subject=Introduction" className="w-inline-block"><img src="images/mail_icon.png" loading="lazy" sizes="100px" srcSet="images/mail_icon-p-500.png 500w, images/mail_icon-p-800.png 800w, images/mail_icon.png 980w" alt className="af-class-image-4" /></a>
+              <a href="mailto:roberto@cegames.ca?subject=Introduction&body=Hi Roberto, %0D%0A%0D%0AI would like to introduce myself." className="w-inline-block"><img src="images/mail_icon.png" loading="lazy" sizes="100px" srcSet="images/mail_icon-p-500.png 500w, images/mail_icon-p-800.png 800w, images/mail_icon.png 980w" alt className="af-class-image-4" /></a>
             </div>
             {/* [if lte IE 9]><![endif] */}
           </div>

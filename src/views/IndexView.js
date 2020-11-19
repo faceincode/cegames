@@ -47,6 +47,7 @@ class IndexView extends React.Component {
 
   render() {
     const proxies = Controller !== IndexView ? transformProxies(this.props.children) : {
+      'framework-form': [],
       'email': [],
       'submit': [],
     }
@@ -75,7 +76,7 @@ class IndexView extends React.Component {
                   <h2 className="af-class-heading-3">The Framework</h2>
                   <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes best practices, from initial market research, to scaling your publishing.<br />Coming Soon.</p>
                   <div>
-                    <div className="af-class-form-block w-form">
+                    {map(proxies['framework-form'], props => <div {...{...props, className: `af-class-form-block w-form ${props.className || ''}`}}>{createScope(props.children, proxies => <React.Fragment>
                       <form id="email-form" name="email-form" data-name="Email Form" className="af-class-subscribe-form-flex">
                         <div className="af-class-subscribe-form-input-wrapper">{map(proxies['email'], props => <input type="email" maxLength={256} name="email" data-name="email" placeholder="E-Mail Address" id="email" required {...{...props, className: `af-class-subscribe-form-input w-input ${props.className || ''}`}}>{props.children}</input>)}</div>
                         <div className="af-class-div-block-5">{map(proxies['submit'], props => <input type="submit" value="Subscribe" data-wait="Please wait..." id="submit" {...{...props, className: `af-class-submit-button-2 w-button ${props.className || ''}`}}>{props.children}</input>)}</div>
@@ -86,7 +87,7 @@ class IndexView extends React.Component {
                       <div className="af-class-error-message af-class-error-message-2 w-form-fail">
                         <div className="af-class-text-block-2">Subscription&nbsp;Error.&nbsp;Please try again.</div>
                       </div>
-                    </div>
+                    </React.Fragment>)}</div>)}
                   </div>
                 </div>
               </div>

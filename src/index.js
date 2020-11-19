@@ -7,12 +7,12 @@ import reportWebVitals from './reportWebVitals';
 
 import './styles'
 import './scripts'
-import IndexView from './views/IndexView'
+import IndexController from './controllers/IndexController'
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={IndexView} />
+            <Route exact path="/" component={IndexController} />
         </Switch>
     </BrowserRouter>
   ,document.getElementById('root')

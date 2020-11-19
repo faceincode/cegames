@@ -75,7 +75,7 @@ class IndexView extends React.Component {
                   <h2 className="af-class-heading-3">The Framework</h2>
                   <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes best practices, from initial market research, to scaling your publishing.<br />Coming Soon.</p>
                   <div>
-                    <FrameworkFormView.Controller-af-sock-framework-form />
+                    {proxies['framework-form'] && <FrameworkFormView.Controller {...proxies['framework-form']}>{proxies['framework-form'].children}</FrameworkFormView.Controller>}
                   </div>
                 </div>
               </div>

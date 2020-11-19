@@ -15,3 +15,8 @@ search:
 <br/>replace:
 <br/>
 !function(){return;o=t("html").attr("data-wf-site")
+
+#3 @ Indexview.js
+Update e-mail 
+<br/>
+<a href="mailto:roberto@cegames.ca?subject=Introduction&body=Hi Roberto, %0D%0A%0D%0AI would like to introduce myself."

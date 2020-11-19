@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
-import FrameworkFormView from './FrameworkFormView'
 
 const scripts = [
   fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fb2ce675a0bc01f7fb15678").then(body => body.text()),
@@ -48,7 +47,8 @@ class IndexView extends React.Component {
 
   render() {
     const proxies = Controller !== IndexView ? transformProxies(this.props.children) : {
-      'framework-form': [],
+      'email': [],
+      'submit': [],
     }
 
     return (
@@ -74,7 +74,20 @@ class IndexView extends React.Component {
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-3">The Framework</h2>
                   <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes best practices, from initial market research, to scaling your publishing.<br />Coming Soon.</p>
-                  <FrameworkFormView.Controller-af-sock-framework-form />
+                  <div>
+                    <div className="af-class-form-block w-form">
+                      <form id="email-form" name="email-form" data-name="Email Form" className="af-class-subscribe-form-flex">
+                        <div className="af-class-subscribe-form-input-wrapper">{map(proxies['email'], props => <input type="email" maxLength={256} name="email" data-name="email" placeholder="E-Mail Address" id="email" required {...{...props, className: `af-class-subscribe-form-input w-input ${props.className || ''}`}}>{props.children}</input>)}</div>
+                        <div className="af-class-div-block-5">{map(proxies['submit'], props => <input type="submit" value="Subscribe" data-wait="Please wait..." id="submit" {...{...props, className: `af-class-submit-button-2 w-button ${props.className || ''}`}}>{props.children}</input>)}</div>
+                      </form>
+                      <div className="af-class-success-message w-form-done">
+                        <div className="af-class-text-block">Thank you for subscribing.</div>
+                      </div>
+                      <div className="af-class-error-message af-class-error-message-2 w-form-fail">
+                        <div className="af-class-text-block-2">Subscription&nbsp;Error.&nbsp;Please try again.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="af-class-column-2 w-col w-col-6">

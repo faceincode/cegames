@@ -72,7 +72,7 @@ class IndexView extends React.Component {
               <div className="af-class-column w-col w-col-6">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-3">The Framework</h2>
-                  <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes best practices, from initial market research, to scaling your publishing.<br />Coming Soon.</p>
+                  <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes best practices, <br />from initial market research, to scaling your publishing. Coming Soon.</p>
                   <div>
                     <div className="af-class-form-block w-form">
                       <form id="email-form" name="email-form" data-name="Email Form" method="post" action="https://cegames.us7.list-manage.com/subscribe/post?u=04ee9507edb15479a51e18fde&amp;id=d8b32178be" className="af-class-subscribe-form-flex">

@@ -62,7 +62,7 @@ class FrameworkFormView extends React.Component {
         ` }} />
         <span className="af-view">
           <div className="af-class-form-block w-form">
-            {map(proxies['form-state-normal'], props => <form id="email-form" name="email-form" data-name="Email Form" method="post" {...{...props, className: `af-class-subscribe-form-flex ${props.className || ''}`}}>{createScope(props.children, proxies => <React.Fragment>
+            {map(proxies['form-state-normal'], props => <form id="email-form" name="email-form" data-name="Email Form" method="post" redirect="https://cegames.us7.list-manage.com/subscribe/post?u=04ee9507edb15479a51e18fde" data-redirect="https://cegames.us7.list-manage.com/subscribe/post?u=04ee9507edb15479a51e18fde" {...{...props, className: `af-class-subscribe-form-flex ${props.className || ''}`}}>{createScope(props.children, proxies => <React.Fragment>
               <div className="af-class-subscribe-form-input-wrapper">{map(proxies['email'], props => <input type="email" maxLength={256} name="email" data-name="email" placeholder="E-Mail Address" id="email" required {...{...props, className: `af-class-subscribe-form-input w-input ${props.className || ''}`}}>{props.children}</input>)}</div>
               <div className="af-class-div-block-5">{map(proxies['submit'], props => <input type="submit" value="Subscribe" data-wait="Please wait..." id="submit" {...{...props, className: `af-class-submit-button-2 w-button ${props.className || ''}`}}>{props.children}</input>)}</div>
             </React.Fragment>)}</form>)}

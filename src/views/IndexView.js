@@ -72,7 +72,7 @@ class IndexView extends React.Component {
               <div className="af-class-column w-col w-col-6">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-3">The Playbook</h2>
-                  <p className="af-class-paragraph-3">A F2P mobile game framework that formalizes the industry's best practices.<br />From initial market research, to scaling your publishing. Coming Soon.</p>
+                  <p className="af-class-paragraph-3">A F2P framework that formalizes the industry's best practices.<br />From initial market research, to product analysis, and scaling your publishing. <br />Coming Soon.</p>
                   <div>
                     <div className="af-class-form-block w-form">
                       <form id="email-form" name="email-form" data-name="Email Form" method="post" action="https://cegames.us7.list-manage.com/subscribe/post?u=04ee9507edb15479a51e18fde&amp;id=d8b32178be" className="af-class-subscribe-form-flex">
@@ -92,7 +92,7 @@ class IndexView extends React.Component {
               <div className="af-class-column-2 w-col w-col-6">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-2">Consulting</h2>
-                  <p className="af-class-paragraph-2">Tell us about your product, goals, and timelines.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. Free of charge.</p>
+                  <p className="af-class-paragraph-2">Tell us about your product, goals, and timelines.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. <br />Free of charge.</p>
                   <div className="af-class-div-block-4">
                     <a href="https://calendly.com/roberto_alcantara/45-minute?month=2020-11&date=2020-11-17&back=1" target="_blank" className="af-class-button w-button">Join&nbsp;Waitlist</a>
                   </div>

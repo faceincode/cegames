@@ -345,6 +345,8 @@
     padding: 40px 20px;
   }
 
+  af-class-column w-col w-col-6
+
   .af-view .af-class-flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

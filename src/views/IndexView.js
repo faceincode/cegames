@@ -68,7 +68,7 @@ class IndexView extends React.Component {
                 <div className="af-class-hero-image-mask"><img src="images/CELogo_Large_black.png" sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, 450px" srcSet="images/CELogo_Large_black-p-500.png 500w, images/CELogo_Large_black-p-800.png 800w, images/CELogo_Large_black-p-1080.png 1080w, images/CELogo_Large_black-p-1600.png 1600w, images/CELogo_Large_black-p-2000.png 2000w, images/CELogo_Large_black-p-2600.png 2600w, images/CELogo_Large_black-p-3200.png 3200w, images/CELogo_Large_black.png 5000w" alt className="af-class-hero-image" /></div>
               </div>
             </header>
-            <div className="w-row">
+            <div className="af-class-columns w-row">
               <div className="af-class-column w-col w-col-6">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-3">The Playbook</h2>

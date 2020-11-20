@@ -63,7 +63,7 @@ class IndexView extends React.Component {
               <div className="af-class-flex-container w-container">
                 <div className="af-class-div-block-6">
                   <h1 className="af-class-heading">Collective<br />Entertainment</h1>
-                  <p className="af-class-paragraph">Our best work happens when we all row together toward the most impactful outcomes.<br /><br />We help you get a handle on Free-Top-Play (F2P) mobile game development each step of the journey.<br /><br />Formalize your process, improve your metrics, and scale your user acquisition from thousands, to millions.<br /><br />15+ years developing games, building infrastructure, managing products, and guiding teams.<br /></p>
+                  <p className="af-class-paragraph">Our best work happens when we row in unison towards the most impactful outcomes.<br /><br />My goal is to help you get a handle on Free-Top-Play (F2P) mobile game development each step of the way.<br /><br />Formalize your process, improve your metrics, and scale your user acquisition from thousands, to millions.<br /><br />15+ years developing games, building infrastructure, managing products, and guiding teams.<br /></p>
                 </div>
                 <div className="af-class-hero-image-mask"><img src="images/CELogo_Large_black.png" sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, 450px" srcSet="images/CELogo_Large_black-p-500.png 500w, images/CELogo_Large_black-p-800.png 800w, images/CELogo_Large_black-p-1080.png 1080w, images/CELogo_Large_black-p-1600.png 1600w, images/CELogo_Large_black-p-2000.png 2000w, images/CELogo_Large_black-p-2600.png 2600w, images/CELogo_Large_black-p-3200.png 3200w, images/CELogo_Large_black.png 5000w" alt className="af-class-hero-image" /></div>
               </div>
@@ -77,7 +77,7 @@ class IndexView extends React.Component {
                     <div className="af-class-form-block w-form">
                       <form id="email-form" name="email-form" data-name="Email Form" method="post" action="https://cegames.us7.list-manage.com/subscribe/post?u=04ee9507edb15479a51e18fde&amp;id=d8b32178be" className="af-class-subscribe-form-flex">
                         <div className="af-class-subscribe-form-input-wrapper"><input type="email" className="af-class-subscribe-form-input w-input" maxLength={256} name="email" data-name="email" placeholder="E-Mail Address" id="email" required /></div>
-                        <div className="af-class-div-block-5"><input type="submit" defaultValue="Subscribe" data-wait="Working..." id="submit" className="af-class-submit-button-2 w-button" /></div>
+                        <div className="af-class-div-block-5"><input type="submit" defaultValue="Let's Go!" data-wait="Working..." id="submit" className="af-class-submit-button-2 w-button" /></div>
                       </form>
                       <div className="af-class-success-message w-form-done">
                         <div className="af-class-text-block">Thank you for subscribing.</div>
@@ -92,7 +92,7 @@ class IndexView extends React.Component {
               <div className="af-class-column-2 w-col w-col-6">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-2">Consulting</h2>
-                  <p className="af-class-paragraph-2">Tell us about your progress, goals, and timelines.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. Free of charge.</p>
+                  <p className="af-class-paragraph-2">Tell us about your product, goals, and timelines.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. Free of charge.</p>
                   <div className="af-class-div-block-4">
                     <a href="https://calendly.com/roberto_alcantara/45-minute?month=2020-11&date=2020-11-17&back=1" target="_blank" className="af-class-button w-button">Join&nbsp;Waitlist</a>
                   </div>

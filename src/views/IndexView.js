@@ -69,7 +69,7 @@ class IndexView extends React.Component {
               </div>
             </header>
             <div className="af-class-columns w-row">
-              <div className="af-class-column w-col w-col-6">
+              <div className="af-class-column w-col w-col-6 w-col-stack w-col-small-small-stack w-col-tiny-tiny-stack">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-3">The Playbook</h2>
                   <p className="af-class-paragraph-3">A F2P framework that formalizes the industry's best practices.<br />From initial market research, to scaling your publishing. Coming Soon.</p>
@@ -89,7 +89,7 @@ class IndexView extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="af-class-column-2 w-col w-col-6">
+              <div className="af-class-column-2 w-col w-col-6 w-col-stack w-col-small-small-stack w-col-tiny-tiny-stack">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-2">Consulting</h2>
                   <p className="af-class-paragraph-2">Tell me about your product, goals, and timelines,&nbsp;free of charge.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. <br /></p>

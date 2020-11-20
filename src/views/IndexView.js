@@ -92,7 +92,7 @@ class IndexView extends React.Component {
               <div className="af-class-column-2 w-col w-col-6">
                 <div className="af-class-centered-container w-container">
                   <h2 className="af-class-heading-2">Consulting</h2>
-                  <p className="af-class-paragraph-2">Tell us about your product, goals, and timelines,&nbsp;free of charge.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. <br /></p>
+                  <p className="af-class-paragraph-2">Tell me about your product, goals, and timelines,&nbsp;free of charge.<br />We'll soundboard, discuss strategies, and explore tactics over 45 minutes. <br /></p>
                   <div className="af-class-div-block-4">
                     <a href="https://calendly.com/roberto_alcantara/45-minute?month=2020-11&date=2020-11-17&back=1" target="_blank" className="af-class-button w-button">Join&nbsp;Waitlist</a>
                   </div>
